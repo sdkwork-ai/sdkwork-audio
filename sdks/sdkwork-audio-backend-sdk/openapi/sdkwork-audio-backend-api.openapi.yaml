@@ -40,7 +40,7 @@ tags:
 paths:
   /provider-routes:
     get:
-      operationId: providerRoutes.list
+      operationId: list
       summary: List provider routes
       description: List all provider routes.
       tags:
@@ -58,7 +58,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/SdkWorkListResponse'
     post:
-      operationId: providerRoutes.create
+      operationId: create
       summary: Create provider route
       description: Create a new provider route.
       tags:
@@ -91,9 +91,10 @@ paths:
                       properties:
                         item:
                           $ref: '#/components/schemas/ProviderRouteResponse'
+      parameters: []
   /provider-routes/{providerRouteId}:
     get:
-      operationId: providerRoutes.retrieve
+      operationId: retrieve
       summary: Get provider route
       description: Get details of a specific provider route.
       tags:
@@ -128,7 +129,7 @@ paths:
                         item:
                           $ref: '#/components/schemas/ProviderRouteResponse'
     patch:
-      operationId: providerRoutes.update
+      operationId: update
       summary: Update provider route
       description: Update a provider route.
       tags:
@@ -170,7 +171,7 @@ paths:
                           $ref: '#/components/schemas/ProviderRouteResponse'
   /tasks:
     get:
-      operationId: tasks.list
+      operationId: list
       summary: List tasks
       description: List all tasks (admin).
       tags:
@@ -221,7 +222,7 @@ paths:
                 $ref: '#/components/schemas/SdkWorkListResponse'
   /tasks/{taskId}:
     get:
-      operationId: tasks.retrieve
+      operationId: retrieve
       summary: Get task details
       description: Get details of a specific task (admin).
       tags:
@@ -257,7 +258,7 @@ paths:
                           $ref: '#/components/schemas/TaskDetailResponse'
   /tasks/{taskId}/retry:
     post:
-      operationId: tasks.retry
+      operationId: retry
       summary: Retry task
       description: Retry a failed task.
       tags:
@@ -293,7 +294,7 @@ paths:
                           $ref: '#/components/schemas/TaskResponse'
   /tasks/{taskId}/reconcile:
     post:
-      operationId: tasks.reconcile
+      operationId: reconcile
       summary: Reconcile task
       description: Reconcile a stuck task.
       tags:
@@ -408,7 +409,7 @@ paths:
                           $ref: '#/components/schemas/WebhookEventResponse'
   /analytics/usage:
     get:
-      operationId: analytics.retrieve
+      operationId: retrieve
       summary: Get usage analytics
       description: Get usage analytics.
       tags:

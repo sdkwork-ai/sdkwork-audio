@@ -1,11 +1,10 @@
-//! Artifact repository
+//! Artifact repository port
 
 use async_trait::async_trait;
-use uuid::Uuid;
 
 use crate::entities::artifact::*;
 
-/// Artifact repository trait
+/// Artifact repository port trait
 #[async_trait]
 pub trait ArtifactRepository {
     async fn create(&self, request: CreateArtifactRequest) -> Result<AudioArtifact, sqlx::Error>;
@@ -15,6 +14,3 @@ pub trait ArtifactRepository {
     async fn list(&self, filter: ArtifactFilter, limit: i64, offset: i64) -> Result<ArtifactListResult, sqlx::Error>;
     async fn count(&self, filter: ArtifactFilter) -> Result<i64, sqlx::Error>;
 }
-
-
-

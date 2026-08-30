@@ -1,4 +1,4 @@
-//! Audio voice entity
+//! Audio voice entity (service port shared type)
 
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};

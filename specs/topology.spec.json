@@ -25,7 +25,8 @@
   "defaults": {
     "developmentProfileId": "cloud.development",
     "productionProfileId": "cloud.production",
-    "gatewayBind": "127.0.0.1:3900"
+    "gatewayBind": "127.0.0.1:3900",
+    "desktopBuildProfileId": "cloud.production"
   },
   "profileFiles": {
     "cloud.development": "etc/topology/cloud.development.env",

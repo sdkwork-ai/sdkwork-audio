@@ -46,7 +46,7 @@ tags:
 paths:
   /speech:
     post:
-      operationId: speech.create
+      operationId: create
       summary: Create speech synthesis task
       description: Create a new speech synthesis task from text input.
       tags:
@@ -85,9 +85,10 @@ paths:
           $ref: '#/components/responses/UnauthorizedError'
         '429':
           $ref: '#/components/responses/RateLimitError'
+      parameters: []
   /speech/voices:
     get:
-      operationId: speech.voices.list
+      operationId: voices.list
       summary: List speech voices
       description: List available speech synthesis voices.
       tags:
@@ -129,7 +130,7 @@ paths:
                 $ref: '#/components/schemas/SdkWorkListResponse'
   /transcriptions:
     post:
-      operationId: transcriptions.create
+      operationId: create
       summary: Create transcription task
       description: Create a new audio transcription task.
       tags:
@@ -162,9 +163,10 @@ paths:
                       properties:
                         item:
                           $ref: '#/components/schemas/TaskResponse'
+      parameters: []
   /transcriptions/{taskId}/segments:
     get:
-      operationId: transcriptions.segments.list
+      operationId: segments.list
       summary: List transcription segments
       description: List segments of a completed transcription.
       tags:
@@ -188,7 +190,7 @@ paths:
                 $ref: '#/components/schemas/SdkWorkListResponse'
   /translations:
     post:
-      operationId: translations.create
+      operationId: create
       summary: Create translation task
       description: Create a new audio translation task.
       tags:
@@ -221,9 +223,10 @@ paths:
                       properties:
                         item:
                           $ref: '#/components/schemas/TaskResponse'
+      parameters: []
   /sound-effects:
     post:
-      operationId: soundEffects.create
+      operationId: create
       summary: Generate sound effect
       description: Generate a sound effect from text description.
       tags:
@@ -256,9 +259,10 @@ paths:
                       properties:
                         item:
                           $ref: '#/components/schemas/TaskResponse'
+      parameters: []
   /tasks:
     get:
-      operationId: tasks.list
+      operationId: list
       summary: List tasks
       description: List user's audio generation tasks.
       tags:
@@ -303,7 +307,7 @@ paths:
                 $ref: '#/components/schemas/SdkWorkListResponse'
   /tasks/{taskId}:
     get:
-      operationId: tasks.retrieve
+      operationId: retrieve
       summary: Get task details
       description: Get details of a specific task.
       tags:
@@ -339,7 +343,7 @@ paths:
                           $ref: '#/components/schemas/TaskDetailResponse'
   /tasks/{taskId}/cancel:
     post:
-      operationId: tasks.cancel
+      operationId: cancel
       summary: Cancel task
       description: Cancel a running task.
       tags:
@@ -375,7 +379,7 @@ paths:
                           $ref: '#/components/schemas/TaskResponse'
   /realtime/sessions:
     post:
-      operationId: realtime.sessions.create
+      operationId: sessions.create
       summary: Create real-time session
       description: Create a new real-time audio processing session.
       tags:
@@ -408,9 +412,10 @@ paths:
                       properties:
                         item:
                           $ref: '#/components/schemas/RealtimeSessionResponse'
+      parameters: []
   /voices:
     get:
-      operationId: voices.list
+      operationId: list
       summary: List voices
       description: List user's custom voices.
       tags:
@@ -428,7 +433,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/SdkWorkListResponse'
     post:
-      operationId: voices.create
+      operationId: create
       summary: Create voice
       description: Create a custom voice from reference audio.
       tags:
@@ -461,9 +466,10 @@ paths:
                       properties:
                         item:
                           $ref: '#/components/schemas/VoiceResponse'
+      parameters: []
   /workspaces:
     get:
-      operationId: workspaces.list
+      operationId: list
       summary: List workspaces
       description: List user's audio workspaces.
       tags:
@@ -481,7 +487,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/SdkWorkListResponse'
     post:
-      operationId: workspaces.create
+      operationId: create
       summary: Create workspace
       description: Create a new audio workspace.
       tags:
@@ -514,9 +520,10 @@ paths:
                       properties:
                         item:
                           $ref: '#/components/schemas/WorkspaceResponse'
+      parameters: []
   /exports:
     post:
-      operationId: exports.create
+      operationId: create
       summary: Create export
       description: Create an audio export task.
       tags:
@@ -549,6 +556,7 @@ paths:
                       properties:
                         item:
                           $ref: '#/components/schemas/TaskResponse'
+      parameters: []
 components:
   securitySchemes:
     AuthToken:

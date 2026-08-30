@@ -1,0 +1,11 @@
+[package]
+name = "sdkwork-audio-generation-service-port"
+version = "0.1.0"
+edition = "2021"
+description = "SDKWork Audio generation service ports: repository traits and shared DTOs consumed by service crates and implemented by repository-sqlx"
+
+[dependencies]
+async-trait.workspace = true
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1", features = ["derive"] }
+sqlx.workspace = true

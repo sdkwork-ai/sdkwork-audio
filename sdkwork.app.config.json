@@ -76,7 +76,7 @@
       },
       "platform": [],
       "metadata": {
-        "generatedBy": "apps/scripts/initialize-sdkwork-app-standard-v3.mjs"
+        "generatedPlaceholder": true
       }
     },
     "screenshots": [
@@ -170,7 +170,10 @@
           "checksum": "1eb027fb1eb027fb1eb027fb1eb027fb1eb027fb1eb027fb1eb027fb1eb027fb",
           "architecture": "universal",
           "deploymentProfile": "cloud",
-          "runtimeTarget": "browser"
+          "runtimeTarget": "browser",
+          "profileBinding": "fixed",
+          "targetPlatform": "web",
+          "clientArchitecture": "pc-web"
         }
       ],
       "metadata": {
@@ -223,7 +226,7 @@
   },
   "metadata": {
     "standardOwner": "sdkwork-platform",
-    "initializedAt": "2026-06-14T00:00:00Z"
-  },
-  "sdkDependencies": []
+    "initializedAt": "2026-06-14T00:00:00Z",
+    "deploymentConfig": "etc/sdkwork.deployment.config.json"
+  }
 }

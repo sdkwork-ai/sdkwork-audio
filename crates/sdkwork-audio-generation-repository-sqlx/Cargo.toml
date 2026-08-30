@@ -12,6 +12,7 @@ sha2 = "0.10"
 sdkwork-database-config = { workspace = true }
 sdkwork-database-sqlx = { workspace = true }
 sdkwork-audio-database-host = { workspace = true }
+sdkwork-audio-generation-service-port = { workspace = true }
 sqlx = { version = "0.9", default-features = false, features = ["runtime-tokio", "any", "postgres", "derive"] }
 tokio = { version = "1.48", features = ["macros", "rt-multi-thread"] }
 uuid = { version = "1", features = ["v4"] }

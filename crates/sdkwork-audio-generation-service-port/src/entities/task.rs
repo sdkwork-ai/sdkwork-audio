@@ -1,4 +1,4 @@
-//! Audio generation task entity
+//! Audio generation task entity (service port shared type)
 
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};

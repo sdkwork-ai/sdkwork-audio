@@ -8,10 +8,10 @@ use tracing::{error, info, warn};
 use crate::error::{SoundEffectServiceError, SoundEffectServiceResult};
 use crate::models::*;
 use sdkwork_audio_artifact_drive_service::AudioArtifactDriveService;
-use sdkwork_audio_generation_repository_sqlx::entities::artifact::*;
-use sdkwork_audio_generation_repository_sqlx::entities::task::*;
-use sdkwork_audio_generation_repository_sqlx::repositories::artifact::ArtifactRepository;
-use sdkwork_audio_generation_repository_sqlx::repositories::task::TaskRepository;
+use sdkwork_audio_generation_service_port::entities::artifact::*;
+use sdkwork_audio_generation_service_port::entities::task::*;
+use sdkwork_audio_generation_service_port::repositories::artifact::ArtifactRepository;
+use sdkwork_audio_generation_service_port::repositories::task::TaskRepository;
 use sdkwork_audio_sound_effect_generation_service::SoundEffectGenerationServicePort;
 use sdkwork_audio_sound_effect_provider_spi::{SoundEffectGenerationCommand, SoundEffectVendorId};
 

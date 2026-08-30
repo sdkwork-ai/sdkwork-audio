@@ -8,12 +8,12 @@ use uuid::Uuid;
 use sdkwork_audio_speech_service::error::*;
 use sdkwork_audio_speech_service::models::*;
 use sdkwork_audio_speech_service::service::*;
-use sdkwork_audio_generation_repository_sqlx::entities::task::*;
-use sdkwork_audio_generation_repository_sqlx::entities::artifact::*;
-use sdkwork_audio_generation_repository_sqlx::entities::voice::*;
-use sdkwork_audio_generation_repository_sqlx::repositories::task::*;
-use sdkwork_audio_generation_repository_sqlx::repositories::artifact::*;
-use sdkwork_audio_generation_repository_sqlx::repositories::voice::*;
+use sdkwork_audio_generation_service_port::entities::task::*;
+use sdkwork_audio_generation_service_port::entities::artifact::*;
+use sdkwork_audio_generation_service_port::entities::voice::*;
+use sdkwork_audio_generation_service_port::repositories::task::*;
+use sdkwork_audio_generation_service_port::repositories::artifact::*;
+use sdkwork_audio_generation_service_port::repositories::voice::*;
 use sdkwork_audio_ai_engine_rust::*;
 // Aliases for the ai-engine request/result types (distinct from the service's own models)
 use sdkwork_audio_ai_engine_rust::{

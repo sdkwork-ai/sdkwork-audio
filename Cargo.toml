@@ -6,6 +6,7 @@ members = [
     "crates/sdkwork-audio-database-host",
     "crates/sdkwork-audio-artifact-drive-service",
     "crates/sdkwork-audio-generation-repository-sqlx",
+    "crates/sdkwork-audio-generation-service-port",
     "crates/sdkwork-audio-realtime-rust",
     "crates/sdkwork-audio-ai-engine-rust",
     "crates/sdkwork-audio-speech-service",
@@ -36,6 +37,7 @@ sdkwork-drive-storage-local = { path = "../sdkwork-drive/crates/sdkwork-drive-st
 sdkwork-drive-workspace-service = { path = "../sdkwork-drive/crates/sdkwork-drive-workspace-service" }
 sdkwork-audio-artifact-drive-service = { path = "crates/sdkwork-audio-artifact-drive-service" }
 sdkwork-audio-generation-repository-sqlx = { path = "crates/sdkwork-audio-generation-repository-sqlx" }
+sdkwork-audio-generation-service-port = { path = "crates/sdkwork-audio-generation-service-port" }
 sdkwork-audio-realtime-rust = { path = "crates/sdkwork-audio-realtime-rust" }
 sdkwork-audio-ai-engine-rust = { path = "crates/sdkwork-audio-ai-engine-rust" }
 sdkwork-audio-speech-service = { path = "crates/sdkwork-audio-speech-service" }
@@ -57,3 +59,5 @@ sha2 = "0.10"
 sqlx = { version = "0.9", default-features = false, features = ["runtime-tokio", "any", "postgres", "derive"] }
 tokio = { version = "1.48", features = ["macros", "rt-multi-thread"] }
 uuid = { version = "1", features = ["v4"] }
+
+sdkwork_web_core = { path = "../sdkwork-web-framework/crates/sdkwork-web-core", package = "sdkwork-web-core" }

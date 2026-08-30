@@ -1,11 +1,10 @@
-//! Voice repository
+//! Voice repository port
 
 use async_trait::async_trait;
-use uuid::Uuid;
 
 use crate::entities::voice::*;
 
-/// Voice repository trait
+/// Voice repository port trait
 #[async_trait]
 pub trait VoiceRepository {
     async fn create(&self, request: CreateVoiceRequest) -> Result<AudioVoice, sqlx::Error>;
@@ -15,6 +14,3 @@ pub trait VoiceRepository {
     async fn list(&self, filter: VoiceFilter, limit: i64, offset: i64) -> Result<VoiceListResult, sqlx::Error>;
     async fn count(&self, filter: VoiceFilter) -> Result<i64, sqlx::Error>;
 }
-
-
-

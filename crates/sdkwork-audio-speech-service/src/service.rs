@@ -8,12 +8,12 @@ use uuid::Uuid;
 
 use crate::error::{SpeechServiceError, SpeechServiceResult};
 use crate::models::*;
-use sdkwork_audio_generation_repository_sqlx::entities::task::*;
-use sdkwork_audio_generation_repository_sqlx::entities::artifact::*;
-use sdkwork_audio_generation_repository_sqlx::entities::voice::*;
-use sdkwork_audio_generation_repository_sqlx::repositories::task::TaskRepository;
-use sdkwork_audio_generation_repository_sqlx::repositories::artifact::ArtifactRepository;
-use sdkwork_audio_generation_repository_sqlx::repositories::voice::VoiceRepository;
+use sdkwork_audio_generation_service_port::entities::task::*;
+use sdkwork_audio_generation_service_port::entities::artifact::*;
+use sdkwork_audio_generation_service_port::entities::voice::*;
+use sdkwork_audio_generation_service_port::repositories::task::TaskRepository;
+use sdkwork_audio_generation_service_port::repositories::artifact::ArtifactRepository;
+use sdkwork_audio_generation_service_port::repositories::voice::VoiceRepository;
 use sdkwork_audio_ai_engine_rust::{AudioAiEngine, SpeechSynthesisRequest as AiSpeechRequest};
 use sdkwork_audio_artifact_drive_service::AudioArtifactDriveService;
 
