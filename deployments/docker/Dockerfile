@@ -36,8 +36,8 @@ COPY --from=builder /app/target/release/sdkwork-audio-api-server /usr/local/bin/
 # Copy migrations
 COPY crates/sdkwork-audio-generation-repository-sqlx/migrations/ /app/migrations/
 
-# Copy configuration
-COPY configs/ /app/configs/
+# Copy source configuration
+COPY etc/ /app/etc/
 
 # Expose port
 EXPOSE 8080
