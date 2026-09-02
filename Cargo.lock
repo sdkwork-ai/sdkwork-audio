@@ -1680,6 +1680,7 @@ version = "0.1.0"
 dependencies = [
  "axum",
  "sdkwork-web-bootstrap",
+ "sdkwork-web-core",
  "tokio",
 ]
 
@@ -1738,6 +1739,7 @@ dependencies = [
  "async-trait",
  "chrono",
  "sdkwork-audio-database-host",
+ "sdkwork-audio-generation-service-port",
  "sdkwork-database-config",
  "sdkwork-database-sqlx",
  "serde",
@@ -1747,6 +1749,16 @@ dependencies = [
  "tokio",
  "tokio-test",
  "uuid",
+]
+
+[[package]]
+name = "sdkwork-audio-generation-service-port"
+version = "0.1.0"
+dependencies = [
+ "async-trait",
+ "chrono",
+ "serde",
+ "sqlx",
 ]
 
 [[package]]
@@ -1819,7 +1831,7 @@ dependencies = [
  "chrono",
  "hex",
  "sdkwork-audio-artifact-drive-service",
- "sdkwork-audio-generation-repository-sqlx",
+ "sdkwork-audio-generation-service-port",
  "sdkwork-audio-sound-effect-generation-service",
  "sdkwork-audio-sound-effect-provider-spi",
  "serde",
@@ -1843,7 +1855,7 @@ dependencies = [
  "hex",
  "sdkwork-audio-ai-engine-rust",
  "sdkwork-audio-artifact-drive-service",
- "sdkwork-audio-generation-repository-sqlx",
+ "sdkwork-audio-generation-service-port",
  "serde",
  "serde_json",
  "sha2 0.10.9",
@@ -1865,7 +1877,7 @@ dependencies = [
  "hex",
  "sdkwork-audio-ai-engine-rust",
  "sdkwork-audio-artifact-drive-service",
- "sdkwork-audio-generation-repository-sqlx",
+ "sdkwork-audio-generation-service-port",
  "serde",
  "serde_json",
  "sha2 0.10.9",
@@ -1887,7 +1899,7 @@ dependencies = [
  "hex",
  "sdkwork-audio-ai-engine-rust",
  "sdkwork-audio-artifact-drive-service",
- "sdkwork-audio-generation-repository-sqlx",
+ "sdkwork-audio-generation-service-port",
  "serde",
  "serde_json",
  "sha2 0.10.9",
@@ -1938,7 +1950,6 @@ dependencies = [
  "serde_json",
  "sqlx",
  "thiserror 2.0.18",
- "tokio",
  "tracing",
 ]
 
