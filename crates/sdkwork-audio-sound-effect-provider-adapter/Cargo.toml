@@ -1,9 +1,13 @@
 [package]
+rust-version.workspace = true
 name = "sdkwork-audio-sound-effect-provider-adapter"
 version.workspace = true
 edition.workspace = true
 description = "Audio engine adapter for SDKWork sound-effect generation."
 
+
+[lints]
+workspace = true
 [dependencies]
 async-trait.workspace = true
 sdkwork-audio-ai-engine-rust.workspace = true

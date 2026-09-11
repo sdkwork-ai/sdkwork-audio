@@ -10,7 +10,7 @@
     "test": "vitest",
     "test:rust": "cargo test --workspace",
     "typecheck": "tsc --noEmit",
-    "verify": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/verify.ps1 && pnpm run check:app-composition",
+    "verify": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/verify.ps1 && pnpm run check:app-composition && pnpm check:cors-standard",
     "sdk:generate": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/generate-sdk.ps1",
     "sdk:generate:typescript": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/generate-sdk.ps1 -Language typescript",
     "lint": "eslint . --ext .ts,.tsx",
@@ -29,6 +29,7 @@
     "api:assembly:materialize": "node ../sdkwork-specs/tools/materialize-api-assembly.mjs --root .",
     "api:assembly:validate": "node ../sdkwork-specs/tools/validate-api-assembly.mjs --root .",
     "check:app-composition": "node ../sdkwork-specs/tools/verify-repo.mjs --root .",
+    "check:cors-standard": "node ../sdkwork-specs/tools/check-cors-standard.mjs --root .",
     "db:postgres:plan": "cargo run --manifest-path ../sdkwork-database/Cargo.toml -p sdkwork-database-cli -- --app-root . plan --engine postgres",
     "db:postgres:init": "cargo run --manifest-path ../sdkwork-database/Cargo.toml -p sdkwork-database-cli -- --app-root . init --engine postgres",
     "topology:validate": "node ../sdkwork-app-topology/scripts/sdkwork-topology.mjs validate --root . --spec specs/topology.spec.json"

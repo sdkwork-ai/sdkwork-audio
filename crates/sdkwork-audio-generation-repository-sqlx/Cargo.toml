@@ -1,9 +1,13 @@
 [package]
+rust-version.workspace = true
 name = "sdkwork-audio-generation-repository-sqlx"
 version = "0.1.0"
 edition = "2021"
 description = "SDKWork Audio generation repository with SQLx"
 
+
+[lints]
+workspace = true
 [dependencies]
 async-trait = "0.1"
 serde = { version = "1", features = ["derive"] }

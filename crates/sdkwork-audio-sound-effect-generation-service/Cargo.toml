@@ -1,9 +1,13 @@
 [package]
+rust-version.workspace = true
 name = "sdkwork-audio-sound-effect-generation-service"
 version.workspace = true
 edition.workspace = true
 description = "Unified SDKWork sound-effect generation service entrypoint."
 
+
+[lints]
+workspace = true
 [dependencies]
 async-trait.workspace = true
 sdkwork-audio-sound-effect-provider-spi.workspace = true

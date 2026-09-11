@@ -1,9 +1,13 @@
 [package]
+rust-version.workspace = true
 name = "sdkwork-audio-sound-effect-service"
 version = "0.1.0"
 edition = "2021"
 description = "SDKWork Audio sound effect service"
 
+
+[lints]
+workspace = true
 [dependencies]
 async-trait = "0.1"
 serde = { version = "1", features = ["derive"] }

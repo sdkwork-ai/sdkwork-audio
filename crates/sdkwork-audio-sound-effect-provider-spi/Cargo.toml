@@ -1,9 +1,13 @@
 [package]
+rust-version.workspace = true
 name = "sdkwork-audio-sound-effect-provider-spi"
 version.workspace = true
 edition.workspace = true
 description = "Transport-neutral provider SPI for SDKWork sound-effect generation."
 
+
+[lints]
+workspace = true
 [dependencies]
 async-trait.workspace = true
 serde.workspace = true

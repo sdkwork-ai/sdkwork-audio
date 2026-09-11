@@ -1,9 +1,13 @@
 [package]
+rust-version.workspace = true
 name = "sdkwork-audio-sound-effect-mcp-service"
 version.workspace = true
 edition.workspace = true
 description = "Model Context Protocol adapter for SDKWork sound-effect generation."
 
+
+[lints]
+workspace = true
 [dependencies]
 base64.workspace = true
 rmcp.workspace = true
