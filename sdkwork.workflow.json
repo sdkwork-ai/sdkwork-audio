@@ -6,7 +6,7 @@
     "name": "sdkwork-audio",
     "repository": "sdkwork-ai/sdkwork-audio",
     "sourcePath": ".",
-    "configPath": "sdkwork.app.config.json"
+    "configPath": "agent.app.config.json"
   },
   "release": {
     "artifactPrefix": "sdkwork-audio",

@@ -11,7 +11,7 @@ The SDKWork Audio Application has been fully aligned with sdkwork-specs standard
 ### 1. Workspace Structure (100%)
 - ✅ Standard directory structure (14 directories)
 - ✅ Agent entrypoint files (AGENTS.md, CLAUDE.md, GEMINI.md, CODEX.md)
-- ✅ Application configuration (sdkwork.app.config.json)
+- ✅ Application configuration (agent.app.config.json)
 - ✅ Build configurations (package.json, Cargo.toml, pnpm-workspace.yaml)
 - ✅ Component specification (specs/component.spec.json)
 - ✅ README files for all directories

@@ -37,7 +37,7 @@ This report documents the alignment status of the SDKWork Audio Application with
 | `CLAUDE.md` | ✅ Created | Claude Code compatibility shim |
 | `GEMINI.md` | ✅ Created | Gemini CLI compatibility shim |
 | `CODEX.md` | ✅ Created | Codex compatibility shim |
-| `sdkwork.app.config.json` | ✅ Created | Application configuration manifest |
+| `agent.app.config.json` | ✅ Created | Application configuration manifest |
 | `package.json` | ✅ Created | Node.js package configuration |
 | `pnpm-workspace.yaml` | ✅ Created | pnpm workspace configuration |
 | `Cargo.toml` | ✅ Created | Rust workspace configuration |
